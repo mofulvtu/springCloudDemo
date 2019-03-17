@@ -5,11 +5,14 @@ eureka:
   instance:
     hostname: localhost
   client:
+    # 是否要注册到其他Eureka Server实例
     registerWithEureka: false
+    # 是否要从其他Eureka Server实例获取数据
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 spring:
   application:
+    # 指定注册到eureka server上的服务名
     name: eureka-server

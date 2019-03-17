@@ -20,6 +20,8 @@
     </properties>
 
     <dependencies>
+
+        <!--Spring cloud Eureka server端依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
@@ -32,6 +34,7 @@
         </dependency>
     </dependencies>
 
+    <!--spring cloud 依赖-->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -44,6 +47,7 @@
         </dependencies>
     </dependencyManagement>
 
+    <!-- spring boot的maven插件 -->
     <build>
         <plugins>
             <plugin>
